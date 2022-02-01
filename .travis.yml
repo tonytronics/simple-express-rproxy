@@ -16,7 +16,7 @@ before_script:
 script:
   - docker --version # print the version for logging
   - docker build -t simple-express-reverse-proxy .
-  - docker tag simple-express $DOCKER_HUB/simple-express-reverse-proxy:latest
+  - docker tag simple-express-reverse-proxy $DOCKER_HUB/simple-express-reverse-proxy:latest
 
 #post config
 after_success:
